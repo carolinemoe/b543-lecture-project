@@ -242,6 +242,8 @@ MonoBehaviour:
   spawnRate: 2
   spawnPosition: {x: -5.347864, y: 1.984923, z: 0}
   offset: {x: 0.4, y: -0.4, z: 0}
+  flagPrefab: {fileID: 532868549534864418, guid: 5a3a5e6120abbaf4ab72638e16cf6bd9, type: 3}
+  player: 1
 --- !u!212 &319847951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -485,7 +487,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 123df52719325b64fb7929071b009ef4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -661,7 +663,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a488931ef8b5c674d937b6e460f9f8a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -865,7 +867,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b897171f1154eda459b400de7312b589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1116,6 +1118,7 @@ GameObject:
   - component: {fileID: 1378157345}
   - component: {fileID: 1378157344}
   - component: {fileID: 1378157343}
+  - component: {fileID: 1378157346}
   m_Layer: 3
   m_Name: redBase
   m_TagString: Untagged
@@ -1130,7 +1133,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378157342}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35604170f4a791b4d991afac66051f4a, type: 3}
   m_Name: 
@@ -1138,7 +1141,9 @@ MonoBehaviour:
   billionairePrefab: {fileID: 4468169699062602562, guid: 7d2081d2efc59664a866a5791661353e, type: 3}
   spawnRate: 2
   spawnPosition: {x: 5.03, y: -1.6, z: 0}
-  offset: {x: -0.3, y: 0.2, z: 0}
+  offset: {x: -0.3, y: -0.3, z: 0}
+  flagPrefab: {fileID: 5195646280654273496, guid: d1a6c0e8bfcd4764188860a47fe3b927, type: 3}
+  player: 2
 --- !u!212 &1378157344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1206,6 +1211,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1378157346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378157342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95198fb4d3d176b4ea9a22f617abdb89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  billionairePrefab: {fileID: 4468169699062602562, guid: 7d2081d2efc59664a866a5791661353e, type: 3}
+  spawnRate: 2
+  spawnPosition: {x: 5.03, y: -1.6, z: 0}
+  offset: {x: -0.3, y: -0.3, z: 0}
+  flagPrefab: {fileID: 5195646280654273496, guid: d1a6c0e8bfcd4764188860a47fe3b927, type: 3}
+  player: 2
 --- !u!1 &1409401524
 GameObject:
   m_ObjectHideFlags: 0
