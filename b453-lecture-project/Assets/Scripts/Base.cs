@@ -101,7 +101,7 @@ public class Base : MonoBehaviour
                 closestFlag = flag;
             }
         }
-        Debug.Log(closestFlag.ToString());
+        //Debug.Log(closestFlag.ToString());
         return closestFlag;
     }
 }
